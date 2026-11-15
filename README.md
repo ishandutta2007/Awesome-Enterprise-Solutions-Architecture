@@ -1,6 +1,6 @@
 # Awesome-Enterprise-Solutions-Architecture
 
-# Top Enterprise Solutions & Architecture Ecosystem
+## Top Enterprise Solutions & Architecture Ecosystem
 
 **Curated List of SaaS Platforms & Open-Source GitHub Projects**  
 *Focused on ERP, CRM, Low-Code Platforms & Self-Hosted Business Application Frameworks*  
