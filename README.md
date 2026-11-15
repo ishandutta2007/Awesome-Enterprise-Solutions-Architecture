@@ -65,9 +65,9 @@ Open-source enterprise solutions provide organizations with **complete data sove
 
 ### ⭐ Open-Source Solutions Ranking
 
-The following curated repositories are sorted in descending order by **GitHub Star Count**:
+The following curated repositories are sorted in descending order by **GitHub Stars_Count**:
 
-| Solution | Stars | Primary Stack | Domain / Focus | Key Features & Architecture |
+| Solution | GitHub_Stars | Primary Stack | Domain / Focus | Key Features & Architecture |
 |:---|:---|:---|:---|:---|
 | **[NocoDB](https://github.com/nocodb/nocodb)** 📊 | [![Stars](https://img.shields.io/github/stars/nocodb/nocodb?style=social&color=white)](https://github.com/nocodb/nocodb/stargazers) | Node.js / Vue.js | No-Code Smart Database / Airtable Alternative | Connects directly to existing databases (PostgreSQL, MySQL, SQL Server) and turns them into a collaborative smart spreadsheet and business database with granular access control and REST APIs. |
 | **[Twenty](https://github.com/twentyhq/twenty)** 🤝 | [![Stars](https://img.shields.io/github/stars/twentyhq/twenty?style=social&color=white)](https://github.com/twentyhq/twenty/stargazers) | TypeScript / React / NestJS | Modern Open-Source CRM | Modern, extensible CRM designed as a true open-source alternative to Salesforce. Offers custom object modeling, GraphQL/REST APIs, webhooks, and slick developer-first ergonomics. |
@@ -139,7 +139,7 @@ flowchart TD
 Contributions are welcome! Help keep this enterprise directory accurate, exhaustive, and up-to-date:
 
 1. **Fork the repository** to your GitHub account.
-2. **Add or modify entries** in `README.md` following the table schema (include official links, factual descriptions, starting price or GitHub star badges).
+2. **Add or modify entries** in `README.md` following the table schema (include official links, factual descriptions, starting price or GitHub Stars_Badges).
 3. **Ensure neutrality**: Keep descriptions factual, architecture-focused, and free of sales marketing fluff.
 4. **Submit a Pull Request** with a clear explanation of changes.
 
