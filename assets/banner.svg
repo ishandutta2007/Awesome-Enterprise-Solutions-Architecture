@@ -1,0 +1,206 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0f1d"/>
+      <stop offset="50%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#070b14"/>
+    </linearGradient>
+
+    <linearGradient id="primary-glow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="50%" stop-color="#818cf8"/>
+      <stop offset="100%" stop-color="#c084fc"/>
+    </linearGradient>
+
+    <linearGradient id="accent-cyan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#3b82f6" stop-opacity="0.2"/>
+    </linearGradient>
+
+    <linearGradient id="card-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.7"/>
+    </linearGradient>
+
+    <!-- Grid Pattern -->
+    <pattern id="grid-pattern" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#334155" stroke-width="0.75" stroke-opacity="0.25"/>
+      <circle cx="40" cy="40" r="1.5" fill="#38bdf8" fill-opacity="0.2"/>
+    </pattern>
+
+    <!-- Filter Shadows & Glows -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+
+    <filter id="soft-glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="25" result="blur" />
+    </filter>
+
+    <style>
+      .title-text {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 800;
+        font-size: 46px;
+        fill: #ffffff;
+        letter-spacing: -1px;
+      }
+      .subtitle-text {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 400;
+        font-size: 19px;
+        fill: #94a3b8;
+        letter-spacing: 0.2px;
+      }
+      .badge-text {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        font-weight: 600;
+        font-size: 13px;
+        fill: #38bdf8;
+      }
+      .card-title {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        font-weight: 700;
+        font-size: 14px;
+        fill: #f1f5f9;
+      }
+      .card-desc {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        font-weight: 400;
+        font-size: 11px;
+        fill: #94a3b8;
+      }
+
+      /* Dynamic Ambient Animations */
+      @keyframes floatSlow {
+        0%, 100% { transform: translateY(0px) scale(1); }
+        50% { transform: translateY(-12px) scale(1.04); }
+      }
+      @keyframes floatReverse {
+        0%, 100% { transform: translateY(0px) scale(1); }
+        50% { transform: translateY(10px) scale(0.97); }
+      }
+      @keyframes pulseGlow {
+        0%, 100% { opacity: 0.35; }
+        50% { opacity: 0.65; }
+      }
+      @keyframes dashFlow {
+        to { stroke-dashoffset: -40; }
+      }
+
+      .floating-orb-1 {
+        animation: floatSlow 7s ease-in-out infinite;
+        transform-origin: center;
+      }
+      .floating-orb-2 {
+        animation: floatReverse 9s ease-in-out infinite;
+        transform-origin: center;
+      }
+      .pulsing-aura {
+        animation: pulseGlow 5s ease-in-out infinite;
+      }
+      .flow-line {
+        stroke-dasharray: 6, 6;
+        animation: dashFlow 2.5s linear infinite;
+      }
+    </style>
+  </defs>
+
+  <!-- 1. Background -->
+  <rect width="1200" height="420" rx="16" fill="url(#bg-grad)"/>
+  <rect width="1200" height="420" rx="16" fill="url(#grid-pattern)"/>
+
+  <!-- 2. Dynamic Ambient Background Glows & Particle Orbs -->
+  <g class="pulsing-aura">
+    <circle cx="180" cy="120" r="160" fill="#38bdf8" fill-opacity="0.18" filter="url(#soft-glow)"/>
+    <circle cx="1020" cy="280" r="190" fill="#818cf8" fill-opacity="0.18" filter="url(#soft-glow)"/>
+    <circle cx="600" cy="390" r="140" fill="#c084fc" fill-opacity="0.12" filter="url(#soft-glow)"/>
+  </g>
+
+  <!-- 3. Dynamic Circuit & Architectural Flow Nodes (Background Decorative) -->
+  <g opacity="0.45">
+    <path d="M 60 210 L 220 210 L 290 280 L 480 280" fill="none" stroke="#38bdf8" stroke-width="1.5" class="flow-line"/>
+    <path d="M 720 140 L 890 140 L 960 210 L 1140 210" fill="none" stroke="#818cf8" stroke-width="1.5" class="flow-line"/>
+    
+    <circle cx="220" cy="210" r="4" fill="#38bdf8" filter="url(#glow)"/>
+    <circle cx="290" cy="280" r="4" fill="#818cf8"/>
+    <circle cx="890" cy="140" r="4" fill="#818cf8"/>
+    <circle cx="960" cy="210" r="4" fill="#c084fc" filter="url(#glow)"/>
+  </g>
+
+  <!-- Dynamic floating ambient nodes -->
+  <g class="floating-orb-1">
+    <circle cx="1060" cy="110" r="30" fill="url(#accent-cyan)" opacity="0.4" filter="url(#glow)"/>
+    <circle cx="1060" cy="110" r="10" fill="#38bdf8" opacity="0.8"/>
+  </g>
+  <g class="floating-orb-2">
+    <circle cx="140" cy="310" r="24" fill="#818cf8" opacity="0.3" filter="url(#glow)"/>
+    <circle cx="140" cy="310" r="8" fill="#c084fc" opacity="0.7"/>
+  </g>
+
+  <!-- 4. Top Tagline Pill (Foreground) -->
+  <g transform="translate(60, 48)">
+    <rect width="320" height="34" rx="17" fill="#1e293b" stroke="#38bdf8" stroke-width="1" stroke-opacity="0.5"/>
+    <circle cx="20" cy="17" r="5" fill="#38bdf8" filter="url(#glow)"/>
+    <text x="35" y="22" class="badge-text">ENTERPRISE SOLUTIONS ECOSYSTEM</text>
+  </g>
+
+  <!-- 5. Main Title & Subtitle (Crisp Foreground, 100% Unobscured) -->
+  <g transform="translate(60, 138)">
+    <text class="title-text">
+      Awesome <tspan fill="url(#primary-glow)">Enterprise Solutions</tspan> &amp; Architecture
+    </text>
+    <text y="44" class="subtitle-text">
+      Curated Landscape of Tier-1 SaaS Platforms, Open-Source ERP, CRM, BPM &amp; Application Frameworks
+    </text>
+  </g>
+
+  <!-- 6. Architectural Functional Domain Cards (Bottom Tier) -->
+  <g transform="translate(60, 240)">
+    <!-- Card 1: Core ERP -->
+    <g transform="translate(0, 0)">
+      <rect width="250" height="120" rx="12" fill="url(#card-grad)" stroke="#334155" stroke-width="1.2"/>
+      <rect width="250" height="3" rx="1.5" fill="#38bdf8"/>
+      <circle cx="32" cy="36" r="14" fill="#0369a1" fill-opacity="0.3"/>
+      <text x="26" y="42" font-size="16">🏛️</text>
+      <text x="56" y="40" class="card-title">ERP &amp; Finance Core</text>
+      <text x="20" y="74" class="card-desc">• General Ledger &amp; Accounting</text>
+      <text x="20" y="94" class="card-desc">• MRP, Supply Chain &amp; Assets</text>
+    </g>
+
+    <!-- Card 2: CRM & Engagement -->
+    <g transform="translate(275, 0)">
+      <rect width="250" height="120" rx="12" fill="url(#card-grad)" stroke="#334155" stroke-width="1.2"/>
+      <rect width="250" height="3" rx="1.5" fill="#818cf8"/>
+      <circle cx="32" cy="36" r="14" fill="#4338ca" fill-opacity="0.3"/>
+      <text x="26" y="42" font-size="16">🤝</text>
+      <text x="56" y="40" class="card-title">CRM &amp; Sales Cloud</text>
+      <text x="20" y="74" class="card-desc">• Pipeline &amp; Customer 360</text>
+      <text x="20" y="94" class="card-desc">• CPQ &amp; Omnichannel Support</text>
+    </g>
+
+    <!-- Card 3: BPM & Workflow -->
+    <g transform="translate(550, 0)">
+      <rect width="250" height="120" rx="12" fill="url(#card-grad)" stroke="#334155" stroke-width="1.2"/>
+      <rect width="250" height="3" rx="1.5" fill="#c084fc"/>
+      <circle cx="32" cy="36" r="14" fill="#7e22ce" fill-opacity="0.3"/>
+      <text x="26" y="42" font-size="16">⚡</text>
+      <text x="56" y="40" class="card-title">BPM &amp; Orchestration</text>
+      <text x="20" y="74" class="card-desc">• BPMN 2.0 &amp; CMMN Engines</text>
+      <text x="20" y="94" class="card-desc">• Rules, SLAs &amp; State Machines</text>
+    </g>
+
+    <!-- Card 4: Low-Code Portals -->
+    <g transform="translate(825, 0)">
+      <rect width="255" height="120" rx="12" fill="url(#card-grad)" stroke="#334155" stroke-width="1.2"/>
+      <rect width="255" height="3" rx="1.5" fill="#34d399"/>
+      <circle cx="32" cy="36" r="14" fill="#047857" fill-opacity="0.3"/>
+      <text x="26" y="42" font-size="16">🛠️</text>
+      <text x="56" y="40" class="card-title">Low-Code &amp; Internal Tools</text>
+      <text x="20" y="74" class="card-desc">• Admin Portals &amp; DB Dashboards</text>
+      <text x="20" y="94" class="card-desc">• Granular RBAC &amp; API Integrations</text>
+    </g>
+  </g>
+</svg>
